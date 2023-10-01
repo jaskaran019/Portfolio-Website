@@ -1,0 +1,289 @@
+:root {
+    --primary-blue: rgb(23, 101, 179);
+}
+
+.masterContainer {
+    width: 70vw;
+    /* border: 1px solid green; */
+    background-color: #fff;
+}
+
+.welcomeMessage {
+    /* border: 1px solid red; */
+    color: #333;
+    margin-top: 10em;
+    text-align: left;
+}
+
+.welcomeMessage h3 {
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.welcomeMessage .desc {
+    margin-top: 4em;
+    font-family: 'Roboto Mono';
+}
+
+.welcomeMessage .desc p {
+    font-size: 1.75em;
+    width: 60%;
+    line-height: 1.3;
+}
+
+.welcomeMessage .desc p span {
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-style: bold;
+}
+
+.linkContainer {
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    width: 50em;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    width: auto;
+}
+
+.link {
+    margin-top: 1em;
+    margin-right: .25em;
+    font-size: 2em;
+}
+
+.link a {
+    color: #333;
+    transition: .3s;
+}
+
+.link a:hover {
+    color: var(--primary-blue);
+}
+
+.email {
+    font-size: 1em;
+    font-weight: 600;
+    margin-top: 2em;
+}
+
+.email a {
+    text-decoration: none;
+    border-bottom: 3px solid var(--primary-blue);
+    color: #333;
+    margin-left: 1.3em;
+    position: relative;
+    bottom: 3px;
+    transition: .3s;
+}
+
+.email a:hover {
+    color: var(--primary-blue);
+}
+
+.backgroundContainer {
+    margin-top: 10rem;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5rem;
+    padding: 0 5rem;
+}
+
+.backgroundContainer h3 {
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--primary-blue);
+}
+
+.backgroundContainer p {
+    max-width: 40em;
+    font-size: .85em;
+    font-weight: 400;
+    text-align: left;
+}
+
+.backgroundContainer p span {
+    font-weight: 700;
+}
+
+.backgroundContainer p a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+.backgroundContainer p a:hover {
+    text-decoration: underline;
+}
+
+.skillsContainer {
+    margin-top: 6rem;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5rem;
+    padding: 0 5rem;
+}
+
+.skillsContainer h3 {
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--primary-blue);
+}
+
+.skillGrid {
+    display: grid;
+    grid-template-rows: 10em 10em 10em;
+    grid-template-columns: 10em 10em 10em;
+}
+
+.skillBox {
+    color: #444;
+    /* border: 1px solid #555; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #AAA;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.skillBox:hover {
+    color: var(--primary-blue);
+}
+
+.skillBox h5 {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.reactIcon {
+    font-size: 5em;
+}
+
+.projectsContainer {
+    margin-top: 6rem;
+    /* border: 1px solid red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5em;
+    padding-left: 9em;
+}
+
+.projectsMasterContainer {
+    /* border: 1px solid purple; */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4em;
+}
+
+.projectsContainer h3 {
+    font-weight: 600;
+    font-size: 1em;
+    color: var(--primary-blue);
+    /* border: 1px solid red; */
+}
+
+.projectDesc {
+    /* border: 1px solid red; */
+    width: 40em;
+    font-size: .9em;
+    font-weight: 400;
+    text-align: left;
+}
+
+.projectDesc p {
+    margin-top: 2em;
+    text-align: left;
+    font-size: .85em;
+}
+
+.projectTitle {
+    color: #444;
+    transition: .3s;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.projectTitle:hover {
+    color: #333;
+}
+
+.rightArrow {
+    position: relative;
+    top: 2px;
+    margin-left: .3em;
+}
+
+.projectSkillList {
+    /* border: 1px solid green; */
+    list-style: none;
+    display: flex;
+    gap: .5em;
+    margin-top: 1.5em;
+}
+
+.projectSkill {
+    border: 2px solid var(--primary-blue);
+    border-radius: 5px;
+    padding: 0 1em;
+    font-weight: 600;
+    color: var(--primary-blue);
+}
+
+.knowMoreBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    background: none;
+    font-weight: 500;
+    margin-top: 1em;
+    cursor: pointer;
+    color: #333;
+    transition: .3s;
+}
+
+.knowMoreBtn:hover {
+    color: var(--primary-blue);
+}
+
+.footer {
+    width: 100%;
+    margin-top: 5em;
+    padding: 2em 5em;
+    font-size: .8em;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer p {
+    text-align: left;
+    color: #333;
+}
+
+.footerSocialList {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+}
+
+.footerSocialItem a {
+    font-size: 1.2em;
+    color: var(--primary-blue);
+    text-decoration: none;
+}
