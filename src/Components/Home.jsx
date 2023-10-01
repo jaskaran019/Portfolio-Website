@@ -7,8 +7,14 @@ import ProjectCard from './ProjectCard';
 import styles from '../styles/Home.module.css'
 
 // Importing Material Ui
-
-
+import {
+  Timeline,
+  TimelineItem,
+  TimelineSeparator,
+  TimelineConnector,
+  TimelineContent,
+  TimelineDot
+} from '@mui/lab'
 // Importing Icons
 import { BsDownload } from "react-icons/bs";
 import { BiLogoFirebase } from "react-icons/bi";
@@ -129,10 +135,14 @@ const Home = () => {
       <div className={styles.projectsContainer} data-aos = "fade-up">
         <h3>PROJECTS</h3>
         <div className={styles.projectsMasterContainer}>
-          
-{/*  */}
-
-          {/* Project 1 */}
+        <Timeline>
+          <TimelineItem>
+          <TimelineSeparator>
+              <TimelineDot style={{backgroundColor: "rgb(23, 101, 179)"}}/>
+              <TimelineConnector/>
+            </TimelineSeparator>
+            <TimelineContent>
+              {/* Project 1 */}
 
           <div className={styles.projectDesc}>
             <h4 className={styles.projectTitle}>Chatwiz : Realtime Chat Application <BsArrowRight className={styles.rightArrow}/></h4>
@@ -147,7 +157,16 @@ const Home = () => {
           {cardVisibilities[0] && <ProjectCard img1 = "assets/Resumate-1.png" cardTitle = "Chatwiz : Realtime Chat Application" skills = "HTML CSS Javascript" teamSize = "4"/>}
           
           </div>
-          {/* Project 2 */}
+          <div><p><br /><br /></p></div>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+          <TimelineSeparator>
+              <TimelineDot style={{backgroundColor: "rgb(23, 101, 179)"}}/>
+              <TimelineConnector />
+            </TimelineSeparator>
+            <TimelineContent>
+              {/* Project 2 */}
           <div className={styles.projectDesc}>
             <h4 className={styles.projectTitle}>Resumate : Online Resume Maker<BsArrowRight className={styles.rightArrow}/></h4>
             <p>Web-based Resume Maker application for a resume making. Integrated the front-end with the back-end to streamline user registration and offer industry-standard templates for rapid resume creation.</p>
@@ -176,17 +195,28 @@ const Home = () => {
             />
             }
           </div>  
-
-          {/* Project 3 */}
-          <div className={styles.projectDesc}>
-            <h4 className={styles.projectTitle}>Clubhouse Clone<BsArrowRight className={styles.rightArrow}/></h4>
-            <p>Clubhouse-inspired React.js project featuring routers, switches, and dual layouts for a unique social audio experience. Join rooms, interact, and enjoy seamless navigation in this immersive app clone.</p>
-            <ul className={styles.projectSkillList}>
-              <li className={styles.projectSkill}>React.js</li>
-            </ul>
-            <button className={styles.knowMoreBtn} onClick={()=>toggleVisibility(2)}>Know More <BiArrowToRight/></button>
-          {cardVisibilities[2] && <ProjectCard img1 = "assets/Screenshot.png" title = "Project" skills = "HTML CSS Javascript" teamSize = "4"/>}
-          </div>  
+          <div><p><br /><br /></p></div>
+            </TimelineContent>
+          </TimelineItem>
+          <TimelineItem>
+            <TimelineSeparator>
+              <TimelineDot style={{backgroundColor: "rgb(23, 101, 179)"}}/>
+              <TimelineConnector/>
+            </TimelineSeparator>
+            <TimelineContent>
+              {/* Project 3 */}
+              <div className={styles.projectDesc}>
+                <h4 className={styles.projectTitle}>Clubhouse Clone<BsArrowRight className={styles.rightArrow}/></h4>
+                <p>Clubhouse-inspired React.js project featuring routers, switches, and dual layouts for a unique social audio experience. Join rooms, interact, and enjoy seamless navigation in this immersive app clone.</p>
+                <ul className={styles.projectSkillList}>
+                  <li className={styles.projectSkill}>React.js</li>
+                </ul>
+                <button className={styles.knowMoreBtn} onClick={()=>toggleVisibility(2)}>Know More <BiArrowToRight/></button>
+              {cardVisibilities[2] && <ProjectCard img1 = "assets/Screenshot.png" title = "Project" skills = "HTML CSS Javascript" teamSize = "4"/>}
+              </div>
+            </TimelineContent>
+          </TimelineItem>
+        </Timeline>  
         </div>
       </div>
       <p style={{marginTop:"4em", fontWeight:"600"}}>Check my other projects on Github. </p>
