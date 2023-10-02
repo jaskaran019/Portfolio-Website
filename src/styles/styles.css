@@ -23,3 +23,30 @@
     object-fit: cover;
     /* border: 1px solid red; */
 }
+
+@media (max-width: 480px) {
+    .swiper {
+        height: 50%;
+    }
+    .swiper-slide {
+        font-size: 10px;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    .swiper {
+        height: 65%;
+    }
+    .swiper-slide {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .swiper {
+        height: 60%;
+    }
+    .swiper-slide {
+        font-size: 18px;
+    }
+}
