@@ -5,6 +5,9 @@ import AOS from 'aos'
 import 'aos/dist/aos.css'
 import ProjectCard from './ProjectCard';
 import styles from '../styles/Home.module.css'
+import { useForm, ValidationError } from '@formspree/react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 // Importing Material Ui
 import {
@@ -60,6 +63,27 @@ const Home = () => {
   useEffect(()=>{
     AOS.init({duration:1000, once:true});
   },[])
+
+  // Formspree & Toastify
+  
+  const [state, handleSubmit] = useForm("mayglopb");
+  useEffect(() => {
+    if (state.succeeded) {
+      // Show the toast notification when state.succeeded is true
+      toast.success('Message Sent Successfuly!', {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "light",
+        });
+        
+    }
+  }, [state.succeeded]);
+
 
   return (
     <>
@@ -154,7 +178,20 @@ const Home = () => {
               <li className={styles.projectSkill}>Ajax</li>
             </ul>  
           <button className={styles.knowMoreBtn} onClick={()=>toggleVisibility(0)}>Know More <BiArrowToRight/></button>
-          {cardVisibilities[0] && <ProjectCard img1 = "assets/Resumate-1.png" cardTitle = "Chatwiz : Realtime Chat Application" skills = "HTML CSS Javascript" teamSize = "4"/>}
+          {cardVisibilities[0] && <ProjectCard 
+          img1 = "assets/Chatwiz-1.png" 
+          img2 = "assets/Chatwiz-2.png" 
+          img3 = "assets/Chatwiz-3.png" 
+          cardTitle = "Chatwiz : Realtime Chat Application" 
+          skills = "HTML CSS Javascript" 
+          teamSize = "4"
+          timeline = "February 2023-June 2023"
+          desc = {
+            <>
+              A cutting-edge chat application with advanced security features to allow seamless real-time communication and online status verification with email-verification and normalization to prevent duplicity.
+            </>
+          }
+          />}
           
           </div>
           <div><p><br /><br /></p></div>
@@ -183,7 +220,8 @@ const Home = () => {
             img3 = "assets/Resumate-3.png" 
             cardTitle = "Resumate : Online Resume Maker"
             skills = "HTML CSS Javascript"
-            teamSize = "5" 
+            teamSize = "5"
+            timeline = "September 2022-December 2022" 
             desc = {
               <>
                 Resumate is a user-friendly website designed to streamline the resume-building process, enabling individuals to create job-ready resumes in just 10 minutes.<br /><br/>
@@ -212,7 +250,27 @@ const Home = () => {
                   <li className={styles.projectSkill}>React.js</li>
                 </ul>
                 <button className={styles.knowMoreBtn} onClick={()=>toggleVisibility(2)}>Know More <BiArrowToRight/></button>
-              {cardVisibilities[2] && <ProjectCard img1 = "assets/Screenshot.png" title = "Project" skills = "HTML CSS Javascript" teamSize = "4"/>}
+              {cardVisibilities[2] && <ProjectCard 
+              img1 = "assets/Clubhouse-1.png" 
+              img2 = "assets/Clubhouse-2.png" 
+              img3 = "assets/Clubhouse-3.png" 
+              cardTitle = "Clubhouse Clone" 
+              skills = "React.js" 
+              teamSize = "1" 
+              timeline ="August 2023"
+              desc ={
+                <>
+                  Clubhouse-inspired React.js project featuring routers, switches, and dual layouts for a unique social audio experience. <br />Join rooms, interact, and enjoy seamless navigation in this immersive app clone. <br /><br />The app featured:
+                  <ol style={{marginLeft:"2em", marginTop:"1em"}}>
+                    <li>Welcome Page</li>
+                    <li>Registration Page</li>
+                    <li>OTP Verification Page</li>
+                    <li>Home Page</li>
+                    <li>Clubhouse Room Page</li>
+                    <li>Profile Page</li>
+                  </ol>
+                </>
+              }/>}
               </div>
             </TimelineContent>
           </TimelineItem>
@@ -220,8 +278,22 @@ const Home = () => {
         </div>
       </div>
       <p style={{marginTop:"4em", fontWeight:"600"}}>Check my other projects on Github. </p>
+      {/* Contact */}
+    <div className={styles.contactContainer} data-aos = "fade-up">
+      <h3>DROP A MESSAGE</h3>
+      <div className={styles.contactFormSubContainer}>
+        <form onSubmit={handleSubmit} className={styles.form}>
+            <label>Your Name<br/><input type="text" name="name" className = {styles.formInput} placeholder="Enter your Name"/></label>
+            <label>Email Address <br/><input type="email" name="email" className = {styles.formInput} placeholder="Enter your Email Address"/></label>
+            <ValidationError prefix="Email" field="email" errors={state.errors}/>
+            <label>Message <br/><textarea name="message" cols="20" rows="5" charswidth="23" style={{resize:"none"}} placeholder="Write your message here"></textarea></label>
+            <ValidationError prefix="Message" field="message" errors={state.errors}/>
+            <button type="submit" disabled={state.submitting}>Submit</button>
+          </form>
+      </div>
     </div>
-
+    </div>
+    <ToastContainer />
     {/* Footer */}
     <div className={styles.footer}>
         <p>Created by <br />Jaskaran Singh🤟🏼2023</p>
