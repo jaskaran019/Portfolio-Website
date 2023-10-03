@@ -475,9 +475,16 @@
         margin-top: 0;
         padding: 2em 5em;
         font-size: .5em;
+        justify-content: center;
+    }
+    .footer p {
+        text-align: center;
     }
     .footerSocialList {
         display: none;
+    }
+    .toast-top {
+        top: 10px;
     }
 }
 

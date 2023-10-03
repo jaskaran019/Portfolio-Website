@@ -8,7 +8,6 @@ import styles from '../styles/Home.module.css'
 import { useForm, ValidationError } from '@formspree/react';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
 // Importing Material Ui
 import {
   Timeline,
@@ -33,6 +32,7 @@ import { BsArrowRight } from "react-icons/bs";
 import { BiArrowToRight } from "react-icons/bi";
 
 const Home = () => {
+
   // Typing effect
   const el = React.useRef(null);
 
@@ -83,7 +83,6 @@ const Home = () => {
         
     }
   }, [state.succeeded]);
-
 
   return (
     <>
