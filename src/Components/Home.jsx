@@ -186,6 +186,7 @@ const Home = () => {
           skills = "HTML CSS Javascript" 
           teamSize = "4"
           timeline = "February 2023-June 2023"
+          projectLink = "https://github.com/jaskaran019/Chatwiz"
           desc = {
             <>
               A cutting-edge chat application with advanced security features to allow seamless real-time communication and online status verification with email-verification and normalization to prevent duplicity.
@@ -222,6 +223,7 @@ const Home = () => {
             skills = "HTML CSS Javascript"
             teamSize = "5"
             timeline = "September 2022-December 2022" 
+            projectLink = "https://github.com/jaskaran019/Resumate.github.io"
             desc = {
               <>
                 Resumate is a user-friendly website designed to streamline the resume-building process, enabling individuals to create job-ready resumes in just 10 minutes.<br /><br/>
@@ -258,6 +260,7 @@ const Home = () => {
               skills = "React.js" 
               teamSize = "1" 
               timeline ="August 2023"
+              projectLink = "https://github.com/jaskaran019/Clubhouse-Clone"
               desc ={
                 <>
                   Clubhouse-inspired React.js project featuring routers, switches, and dual layouts for a unique social audio experience. <br />Join rooms, interact, and enjoy seamless navigation in this immersive app clone. <br /><br />The app featured:
