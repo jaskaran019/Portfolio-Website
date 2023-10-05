@@ -399,7 +399,7 @@
         font-size: .7em;
     }
     .backgroundContainer {
-        margin-top: 5rem;
+        margin-top: 10rem;
         /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
@@ -415,7 +415,7 @@
         text-align: left;
     }
     .skillsContainer {
-        margin-top: 5rem;
+        margin-top: 10rem;
         /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
@@ -429,7 +429,7 @@
         grid-template-columns: 5em 5em 5em;
     }
     .projectsContainer {
-        margin-top: 5rem;
+        margin-top: 10rem;
         /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
@@ -453,7 +453,7 @@
         padding: 0;
     }
     .contactContainer {
-        margin-top: 5rem;
+        margin-top: 10rem;
         /* border: 1px solid red; */
         display: flex;
         flex-direction: column;
@@ -507,19 +507,19 @@
         line-height: 1.3;
     }
     .backgroundContainer {
-        margin-top: 10rem;
+        margin-top: 10em;
         /* border: 1px solid red; */
         gap: 2rem;
         padding: 0;
     }
     .skillsContainer {
-        margin-top: 10rem;
+        margin-top: 10em;
         /* border: 1px solid red; */
         gap: 2rem;
         padding: 0;
     }
     .projectsContainer {
-        margin-top: 10rem;
+        margin-top: 10em;
         /* border: 1px solid red; */
         gap: 2rem;
         padding: 0;
@@ -541,7 +541,7 @@
         padding: 0 2px;
     }
     .contactContainer {
-        margin-top: 10rem;
+        margin-top: 10em;
         /* border: 1px solid red; */
         gap: 2rem;
         padding: 0;
@@ -553,19 +553,19 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
     .backgroundContainer {
-        margin-top: 10rem;
+        margin-top: 10em;
         /* border: 1px solid red; */
         gap: 2rem;
         padding: 0;
     }
     .skillsContainer {
-        margin-top: 10rem;
+        margin-top: 10em;
         /* border: 1px solid red; */
         gap: 2rem;
         padding: 0;
     }
     .projectsContainer {
-        margin-top: 10rem;
+        margin-top: 10em;
         /* border: 1px solid red; */
         gap: 2rem;
         padding: 0;
@@ -581,7 +581,7 @@
         padding: 0 2px;
     }
     .contactContainer {
-        margin-top: 10rem;
+        margin-top: 10em;
         /* border: 1px solid red; */
         gap: 2rem;
         padding: 0;
