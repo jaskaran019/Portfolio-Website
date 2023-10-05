@@ -18,6 +18,8 @@ import {
   TimelineDot
 } from '@mui/lab'
 // Importing Icons
+import {RiTwitterXFill} from "react-icons/ri";
+import {BsLinkedin} from "react-icons/bs";
 import { BsDownload } from "react-icons/bs";
 import { BiLogoFirebase } from "react-icons/bi";
 import { TbBrandCpp } from "react-icons/tb";
@@ -94,9 +96,9 @@ const Home = () => {
           </div>
           <div className={styles.linkContainer}>
             <ul className={styles.links}>
-              <li className={styles.link}><a href="https://www.linkedin.com/in/jaskaran-singh-28a47019a/" target="_blank"><i class="uil uil-linkedin"></i></a></li>
-              <li className={styles.link}><a href="https://twitter.com/jaskaran_019" target="_blank"><i class="uil uil-twitter" ></i></a></li>
-              <li className={styles.link}><a href="https://github.com/jaskaran019" target="_blank"><i class="uil uil-github"></i></a></li>
+              <li className={styles.link}><a href="https://www.linkedin.com/in/jaskaran-singh-28a47019a/" target="_blank"><BsLinkedin/></a></li>
+              <li className={styles.link}><a href="https://twitter.com/jaskaran_019" target="_blank"><RiTwitterXFill/></a></li>
+              <li className={styles.link}><a href="https://github.com/jaskaran019" target="_blank"><AiFillGithub/></a></li>
             </ul>
           </div>
           <p className={styles.email}>Get in Touch👉🏼<a href="mailto: workforjaskaran14@gmail.com">workforjaskaran14@gmail.com</a></p>
