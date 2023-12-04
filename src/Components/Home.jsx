@@ -97,7 +97,6 @@ const Home = () => {
           <div className={styles.linkContainer}>
             <ul className={styles.links}>
               <li className={styles.link}><a href="https://www.linkedin.com/in/jaskaran-singh-28a47019a/" target="_blank"><BsLinkedin/></a></li>
-              <li className={styles.link}><a href="https://twitter.com/jaskaran_019" target="_blank"><RiTwitterXFill/></a></li>
               <li className={styles.link}><a href="https://github.com/jaskaran019" target="_blank"><AiFillGithub/></a></li>
             </ul>
           </div>
