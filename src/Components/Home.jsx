@@ -21,10 +21,11 @@ import {
 import {RiTwitterXFill} from "react-icons/ri";
 import {BsLinkedin} from "react-icons/bs";
 import { BsDownload } from "react-icons/bs";
-import { BiLogoFirebase } from "react-icons/bi";
+import { BiLogoFirebase, BiLogoNodejs } from "react-icons/bi";
 import { TbBrandCpp } from "react-icons/tb";
 import { BiLogoJavascript } from "react-icons/bi";
 import { AiFillGithub } from "react-icons/ai";
+import { SiExpress } from "react-icons/si";
 import { BiLogoReact } from "react-icons/bi";
 import { FaCss3 } from "react-icons/fa";
 import { BiLogoHtml5 } from "react-icons/bi";
@@ -107,7 +108,7 @@ const Home = () => {
 
       <div className={styles.backgroundContainer} data-aos = "fade-up">
         <h3>BACKGROUND</h3>
-        <p>I am a 4th Year student at <span>Chandigarh University</span> studying Bachelor's in Computer Science and Engineering. <br /><br />As a web developer, I enjoy the gap between engineering and design - combining my technical knowledge with my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and efficient under the hood while providing engaging pixel-perfect user experience. <br /><br />Apart from my technical skills i am very good at negotiating and getting my way around people. And when i am not working, i love to watch movies and study Psychology. <br /><br /><a href="assets/7 CGPA Resume.pdf" download target="_blank">Download My Resume<BsDownload style={{fontWeight: "700", fontSize: "1.5em", position: "relative", top: "4px", marginLeft:".2em"}}/> </a></p>
+        <p>I am a 4th Year student at <span>Chandigarh University</span> studying Bachelor's in Computer Science and Engineering. <br /><br />As a web developer, I enjoy the gap between engineering and design - combining my technical knowledge with my keen eye for design to create a beautiful product. My goal is to always build applications that are scalable and efficient under the hood while providing engaging pixel-perfect user experience. <br /><br />Apart from my technical skills i am very good at negotiating and getting my way around people. And when i am not working, i love to watch movies and study Psychology. <br /><br /><a href="assets/Resume.pdf" download target="_blank">Download My Resume<BsDownload style={{fontWeight: "700", fontSize: "1.5em", position: "relative", top: "4px", marginLeft:".2em"}}/> </a></p>
       </div>
 
       {/* Skills Container */}
@@ -126,6 +127,14 @@ const Home = () => {
           <div className={styles.skillBox}>
             <BiLogoReact className={styles.reactIcon}/>
             <h5>React.js</h5>
+          </div>
+          <div className={styles.skillBox}>
+            <BiLogoNodejs className={styles.reactIcon}/>
+            <h5>Node.js</h5>
+          </div>
+          <div className={styles.skillBox}>
+            <SiExpress className={styles.reactIcon}/>
+            <h5>Express.js</h5>
           </div>
           <div className={styles.skillBox}>
             <AiFillGithub className={styles.reactIcon}/>
